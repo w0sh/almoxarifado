@@ -6,6 +6,12 @@
 
 package sistemadealmoxarifado;
 
+
+import br.ufg.inf.almoxarifado.data.DepartamentoDao;
+import br.ufg.inf.almoxarifado.data.util.ConnectionFactory;
+import br.ufg.inf.almoxarifado.model.Departamento;
+import java.sql.SQLException;
+
 /**
  *
  * @author wos
@@ -15,9 +21,16 @@ public class SistemaDeAlmoxarifado {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        //commit 5
+    public static void main(String[] args) throws SQLException {
+       // ConnectionFactory.getInstance().getConnection();
+        Departamento depto2=new Departamento();
+        //depto.setCodigo(1);
+        depto2.setDescricao("departamento dE LOGÍSTICA");
+        depto2.setNome("Logística");
+        
+        DepartamentoDao deptoDao=new DepartamentoDao();
+        deptoDao.salvar(depto2);
+        
     }
     
 }
