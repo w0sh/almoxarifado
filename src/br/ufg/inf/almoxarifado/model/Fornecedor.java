@@ -10,37 +10,35 @@ package br.ufg.inf.almoxarifado.model;
  *
  * @author wos
  */
-public class Funcionario {
-    private String nome;
-    private String snome;
+public class Fornecedor {
+    private String razaoSocial;
+    private String nomeFantasia;
+    private int CNPJ;
     private String fone;
     private String endereco;
-    private int cpf;
-    private Departamento depto;
 
-    public Departamento getDepto() {
-        return depto;
+    public String getRazaoSocial() {
+        return razaoSocial;
     }
 
-    public void setDepto(Departamento depto) {
-        this.depto = depto;
-    }
-        
-
-    public String getNome() {
-        return nome;
+    public void setRazaoSocial(String razaoSocial) {
+        this.razaoSocial = razaoSocial;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String getNomeFantasia() {
+        return nomeFantasia;
     }
 
-    public String getSnome() {
-        return snome;
+    public void setNomeFantasia(String nomeFantasia) {
+        this.nomeFantasia = nomeFantasia;
     }
 
-    public void setSnome(String snome) {
-        this.snome = snome;
+    public int getCNPJ() {
+        return CNPJ;
+    }
+
+    public void setCNPJ(int CNPJ) {
+        this.CNPJ = CNPJ;
     }
 
     public String getFone() {
@@ -58,14 +56,8 @@ public class Funcionario {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
-
-    public int getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(int cpf) {
-        this.cpf = cpf;
-    }
+    
+    
     
     
 }
