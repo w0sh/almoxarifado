@@ -20,7 +20,7 @@ public class Produto {
     private int estoque;
     private int estoqueMinimo;
     private double valor;
-    private LocalDate validade;
+    private String validade;
     private TipoProduto tipo;
 
     public TipoProduto getTipo() {
@@ -81,11 +81,11 @@ public class Produto {
         this.valor = valor;
     }
 
-    public LocalDate getValidade() {
+    public String getValidade() {
         return validade;
     }
 
-    public void setValidade(LocalDate validade) {
+    public void setValidade(String validade) {
         this.validade = validade;
     }
     
